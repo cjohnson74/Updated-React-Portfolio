@@ -41,7 +41,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section class="flex-column flex-center">
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

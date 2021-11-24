@@ -267,6 +267,11 @@ textarea {
   flex-wrap: wrap;
 }
 
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .space-between {
   justify-content: space-between;
 }

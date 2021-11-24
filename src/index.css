@@ -329,6 +329,10 @@ textarea {
   text-align: center;
 }
 
+.space-evenly {
+  justify-content: space-evenly;
+}
+
 .project {
   position: relative;
   width: 100%;

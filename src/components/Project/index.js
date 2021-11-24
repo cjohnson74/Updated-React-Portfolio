@@ -6,7 +6,7 @@ function Project({ project }) {
   const { name, repo, link, description } = project;
 
   return (
-    <div className="project" key={name}>
+    <div data-aos="fade-up" className="project" key={name}>
       <img
         src={require(`../../assets/projects/${name}.jpg`)}
         alt={removeHyphensAndCapitalize(name)}

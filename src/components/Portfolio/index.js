@@ -20,7 +20,7 @@ function Portfolio() {
     },
     {
       name: "MVC Tech Blog",
-      description: "Node/MySQL/HandelBars/JS/CSS/HTML",
+      description: "Node/MySQL/HandleBars/JS/CSS/HTML",
       link: "https://model-view-control-tech-blog.herokuapp.com/",
       repo: "https://github.com/cjohnson74/MVC-Tech-Blog",
     },
@@ -35,6 +35,12 @@ function Portfolio() {
       description: "Inquirer/Jest/Node/JS/CSS/HTML",
       link: "https://cjohnson74.github.io/Team-Profile-Generator/",
       repo: "https://github.com/cjohnson74/Team-Profile-Generator",
+    },
+    {
+      name: "Fitness Tracker",
+      description: "React/MongoDB/NoSQL/Node/JS/CSS/HTML",
+      link: "https://mongo-fitness-tracker-app.herokuapp.com/",
+      repo: "https://github.com/cjohnson74/NoSQL-Fitness-Tracker",
     },
   ]);
   // Aos animations

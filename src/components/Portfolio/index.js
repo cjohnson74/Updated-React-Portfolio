@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Project from "../Project";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { CarouselWrapper } from "react-pretty-carousel";
 
 function Portfolio() {
   // Replace links with deployed projects and GitHub repos

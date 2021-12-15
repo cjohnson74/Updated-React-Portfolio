@@ -51,10 +51,12 @@ function Portfolio() {
 
   return (
     <div>
-      <div className="flex-row space-evenly">
+      <div className="flex-row flex-center my-5">
+        <CarouselWrapper items={3} mode="gallery">
         {projects.map((project, idx) => (
           <Project project={project} key={"project" + idx} />
         ))}
+        </CarouselWrapper>
       </div>
     </div>
   );

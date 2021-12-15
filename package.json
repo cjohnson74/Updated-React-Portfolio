@@ -35,6 +35,7 @@
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^9.5.0",
     "gh-pages": "^3.2.3",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "react-pretty-carousel": "^1.0.19"
   }
 }

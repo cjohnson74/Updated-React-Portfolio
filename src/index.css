@@ -343,7 +343,7 @@ textarea {
   width: 100%;
   max-width: 600px;
   height: 400px;
-  margin: 30px;
+  /* margin: 20px; */
 }
 
 .project-bg {
@@ -360,7 +360,8 @@ textarea {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding: 125px;
+    padding-left: 5%;
+    padding-top: 20%;
     z-index: 900;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -380,7 +381,7 @@ textarea {
 .project-text a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--dark);
+  color: var(--secondary);
   transition: all .3s ease-in-out;
 }
 

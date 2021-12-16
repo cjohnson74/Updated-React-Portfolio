@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import Project from "../Project";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -44,15 +44,38 @@ function Portfolio() {
       repo: "https://github.com/cjohnson74/NoSQL-Fitness-Tracker",
     },
   ]);
+
   // Aos animations
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  // // function to use the window size and change it if the window is resized
+  // function useWindowSize() {
+  //   const [size, setSize] = useState([0, 0]);
+  //   useLayoutEffect(() => {
+  //     function updateSize() {
+  //       setSize([window.innerWidth, window.innerHeight]);
+  //     }
+  //     window.addEventListener('resize', updateSize);
+  //     updateSize();
+  //     return () => window.removeEventListener('resize', updateSize);
+  //   }, []);
+  //   return size;
+  // }
+
+  // const [width, height] = useWindowSize();
+  // let threeItems;
+  // if(width >= 1700) {
+  //   threeItems = true;
+  // } else if (width < 1700) {
+  //   threeItems = false;
+  // }
+
   return (
     <div>
       <div className="flex-row flex-center my-5">
-        <CarouselWrapper items={3} mode="gallery">
+        <CarouselWrapper items={1} mode="gallery">
         {projects.map((project, idx) => (
           <Project project={project} key={"project" + idx} />
         ))}

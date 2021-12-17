@@ -243,7 +243,7 @@ textarea {
 }
 
 .shadow {
-  box-shadow: 4px, 4px, 5px gray;
+  box-shadow: 5px 5px 30px var(--secondary);
 }
 
 .float-left {
@@ -375,7 +375,7 @@ textarea {
   background-color: var(--alpha);
   opacity: 1;
   border: 10px solid var(--secondary);
-  border-radius: 50%;
+  border-radius: 49%;
 }
 
 .project-text h3 {

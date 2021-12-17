@@ -8,6 +8,12 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
+      name: "Biiggie",
+      description: "MongoDB/Express/React/Node/GraphQL/Apollo/JWT",
+      link: "https://agile-basin-79882.herokuapp.com/",
+      repo: "https://github.com/cjohnson74/Biiggie",
+    },
+    {
       name: "Geo Stream",
       description: "API/JS/CSS/HTML",
       link: "https://cjohnson74.github.io/Geo-Stream/",

@@ -31,13 +31,13 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Anton', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
 }
 
 h1,
@@ -79,7 +79,7 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin: 20px 0;
   line-height: 2rem;
 }
@@ -233,6 +233,7 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
   margin-top: 10px;
+  font-size: 5rem;
 }
 
 .profile-img {
@@ -451,9 +452,13 @@ textarea {
     padding-top: 15%;
   }
   .project-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .project p {
-    font-size: .8rem;
+    font-size: .65rem;
+  }
+  p {
+    font-size: 1rem;
+    /* line-height: var(--spacing-one); */
   }
 }

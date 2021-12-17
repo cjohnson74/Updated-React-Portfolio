@@ -3,7 +3,7 @@ import profileImage from '../../assets/profile/profile-image.png';
 
 function About() {
   return (
-    <section className="my-5">
+    <section className="my-8">
       <div className="my-2">
         <div id="profile-img" className="profile-img my-5">
         <img src={profileImage} alt="Carson D. Johnson" width="257" height="405" class="mx-2 float-left circle-border shadow"/>

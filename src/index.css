@@ -16,6 +16,7 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
+  --spacing-ten: calc(5rem);
 }
 
 * {
@@ -307,6 +308,11 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+}
+
+.my-10 {
+  margin-top: var(--spacing-ten);
+  margin-bottom: var(--spacing-ten);
 }
 
 .px-1 {

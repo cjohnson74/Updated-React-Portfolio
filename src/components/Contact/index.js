@@ -1,27 +1,64 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from "emailjs-com";
 
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
+
+  //   const form = useRef();
+
+  //   const sendEmail = (e) => {
+  //     e.preventDefault();
+
+  //     emailjs.sendForm('service_x3a7kcd', 'template_2qg65tf', form.current, 'user_LmbB7UI6aRptKfQhADu3f')
+  //       .then((result) => {
+  //           console.log(result.text);
+  //       }, (error) => {
+  //           console.log(error.text);
+  //       });
+  //   };
+
+  //   return (
+  //     <section class="flex-column flex-center">
+  //     <form id="contact-form" ref={form} onSubmit={sendEmail}>
+  //       <label>Name</label>
+  //       <input type="text" name="from_name" />
+  //       <label>Email</label>
+  //       <input type="email" name="user_email" />
+  //       <label>Message</label>
+  //       <textarea name="message" />
+  //       <input type="submit" value="Send" />
+  //     </form>
+  //     </section>
+  //   );
+  // };
+
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     message: '',
   });
 
+  const [resultState, setResultState] = useState('')
+
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
+
+    emailjs.sendForm('service_x3a7kcd', 'template_2qg65tf', e.target, 'user_LmbB7UI6aRptKfQhADu3f')
+    .then((result) => {
+      console.log(`${result.text}, your email has been sent.`);
+      setResultState(`${result.text}, your email has been sent to cjohnson74.tech@gmail.com.`);
+    }, (error) => {
+      console.log(error.text);
+    });
   };
 
   const handleChange = (e) => {
     if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
+      const isValid = validateEmail(e.target.user_email);
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
       } else {
@@ -29,25 +66,25 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${e.target.user_name} is required.`);
       } else {
         setErrorMessage('');
       }
     }
     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
+      setFormState({ ...formState, [e.target.user_name]: e.target.message });
       console.log('Handle Form', formState);
     }
   };
 
   return (
     <section class="flex-column flex-center">
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" onSubmit={sendEmail}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            name="name"
+            name="from_name"
             defaultValue={name}
             onBlur={handleChange}
           />
@@ -56,7 +93,7 @@ function Contact() {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            name="email"
+            name="user_email"
             defaultValue={email}
             onBlur={handleChange}
           />
@@ -75,7 +112,8 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <button type="submit" value="Send">Send</button>
+        <p>{resultState}</p>
       </form>
     </section>
   );

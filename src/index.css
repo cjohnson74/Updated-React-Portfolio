@@ -236,6 +236,32 @@ textarea {
   font-size: 1rem;
 }
 
+.resume a {
+  color: var(--light);
+  text-decoration: none;
+  opacity: .5;
+  font-size: 1.7rem;
+  transition: all .3s ease-in-out;
+  background-image: linear-gradient(270deg, var(--darker) 0%, var(--darker) 100%);
+  background-repeat: no-repeat;
+  background-size: 50% 0.1rem;
+  background-position: bottom;
+}
+
+.resume a:hover {
+  opacity: 1;
+  font-size: 2rem;
+  background-size: 100% 40%;
+}
+
+.resume a:hover span {
+  display: none;
+}
+
+.resume a:hover:before {
+  content: "View Resume!";
+}
+
 .profile-img {
   width: 100%;
 }
@@ -382,11 +408,16 @@ textarea {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 5px 5px 50px var(--secondary);
+  box-shadow: 0px 0px 50px 10px var(--secondary);
+  transition: all .4s ease-in;
+}
+
+.project:hover .project-bg {
+  border-radius: 0%;
 }
 
 .project-text {
-    color: var(--secondary);
+    color: var(--dark);
     position: absolute;
     top: 0px;
     bottom: 5px;
@@ -403,7 +434,6 @@ textarea {
   background-color: var(--alpha);
   opacity: 1;
   border: 10px solid var(--secondary);
-  border-radius: 49%;
 }
 
 .project-text h3 {
@@ -413,12 +443,12 @@ textarea {
 .project-text a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--secondary);
+  color: var(--dark);
   transition: all .3s ease-in-out;
 }
 
 .project-text a:hover {
-  color: var(--dark);
+  color: var(--darker);
 }
 
 .navActive {

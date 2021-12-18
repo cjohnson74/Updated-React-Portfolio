@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Updated-React-Portfolio/static/css/main.55e227ba.chunk.css",
-    "main.js": "/Updated-React-Portfolio/static/js/main.df6e2751.chunk.js",
-    "main.js.map": "/Updated-React-Portfolio/static/js/main.df6e2751.chunk.js.map",
+    "main.css": "/Updated-React-Portfolio/static/css/main.3142deb2.chunk.css",
+    "main.js": "/Updated-React-Portfolio/static/js/main.636f66a2.chunk.js",
+    "main.js.map": "/Updated-React-Portfolio/static/js/main.636f66a2.chunk.js.map",
     "runtime-main.js": "/Updated-React-Portfolio/static/js/runtime-main.8ed5829a.js",
     "runtime-main.js.map": "/Updated-React-Portfolio/static/js/runtime-main.8ed5829a.js.map",
     "static/css/2.451bf2e4.chunk.css": "/Updated-React-Portfolio/static/css/2.451bf2e4.chunk.css",
     "static/js/2.7c66e943.chunk.js": "/Updated-React-Portfolio/static/js/2.7c66e943.chunk.js",
     "static/js/2.7c66e943.chunk.js.map": "/Updated-React-Portfolio/static/js/2.7c66e943.chunk.js.map",
     "index.html": "/Updated-React-Portfolio/index.html",
-    "precache-manifest.1f4bf8cdeb02b11fef6c224b3dc21872.js": "/Updated-React-Portfolio/precache-manifest.1f4bf8cdeb02b11fef6c224b3dc21872.js",
+    "precache-manifest.912044fc23cd88791cfc36e80015336e.js": "/Updated-React-Portfolio/precache-manifest.912044fc23cd88791cfc36e80015336e.js",
     "service-worker.js": "/Updated-React-Portfolio/service-worker.js",
     "static/css/2.451bf2e4.chunk.css.map": "/Updated-React-Portfolio/static/css/2.451bf2e4.chunk.css.map",
-    "static/css/main.55e227ba.chunk.css.map": "/Updated-React-Portfolio/static/css/main.55e227ba.chunk.css.map",
+    "static/css/main.3142deb2.chunk.css.map": "/Updated-React-Portfolio/static/css/main.3142deb2.chunk.css.map",
     "static/js/2.7c66e943.chunk.js.LICENSE.txt": "/Updated-React-Portfolio/static/js/2.7c66e943.chunk.js.LICENSE.txt",
     "static/media/Biiggie.jpg": "/Updated-React-Portfolio/static/media/Biiggie.741f3c70.jpg",
     "static/media/CLI Team Profile Generator.jpg": "/Updated-React-Portfolio/static/media/CLI Team Profile Generator.7cfc12b2.jpg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.8ed5829a.js",
     "static/css/2.451bf2e4.chunk.css",
     "static/js/2.7c66e943.chunk.js",
-    "static/css/main.55e227ba.chunk.css",
-    "static/js/main.df6e2751.chunk.js"
+    "static/css/main.3142deb2.chunk.css",
+    "static/js/main.636f66a2.chunk.js"
   ]
 }

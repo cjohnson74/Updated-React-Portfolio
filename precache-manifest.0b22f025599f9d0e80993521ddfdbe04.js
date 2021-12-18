@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd76ea527b4d424c6911340aa537acb6",
+    "revision": "f10f267fbe2ca96190ec07c0ace201e8",
     "url": "/Updated-React-Portfolio/index.html"
   },
   {
-    "revision": "894704c54d084e496000",
+    "revision": "b99e7ecf71ba4aead432",
     "url": "/Updated-React-Portfolio/static/css/2.451bf2e4.chunk.css"
   },
   {
-    "revision": "01a63e6c1c1af034751a",
-    "url": "/Updated-React-Portfolio/static/css/main.e8df8b46.chunk.css"
+    "revision": "29ff4446c57dd5ffa999",
+    "url": "/Updated-React-Portfolio/static/css/main.e5c24ebe.chunk.css"
   },
   {
-    "revision": "894704c54d084e496000",
-    "url": "/Updated-React-Portfolio/static/js/2.33e5e864.chunk.js"
+    "revision": "b99e7ecf71ba4aead432",
+    "url": "/Updated-React-Portfolio/static/js/2.7c66e943.chunk.js"
   },
   {
     "revision": "570d362d673dab785e62d2b8563e1118",
-    "url": "/Updated-React-Portfolio/static/js/2.33e5e864.chunk.js.LICENSE.txt"
+    "url": "/Updated-React-Portfolio/static/js/2.7c66e943.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01a63e6c1c1af034751a",
-    "url": "/Updated-React-Portfolio/static/js/main.8d15b0e4.chunk.js"
+    "revision": "29ff4446c57dd5ffa999",
+    "url": "/Updated-React-Portfolio/static/js/main.5b0154e6.chunk.js"
   },
   {
     "revision": "c9eb194ada00bf6131ed",
     "url": "/Updated-React-Portfolio/static/js/runtime-main.8ed5829a.js"
+  },
+  {
+    "revision": "741f3c701848844893dfde026b952d05",
+    "url": "/Updated-React-Portfolio/static/media/Biiggie.741f3c70.jpg"
   },
   {
     "revision": "7cfc12b2fa69950eb60e6053b2c85d6e",
@@ -56,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Updated-React-Portfolio/static/media/cover-image.90b3af0c.jpg"
   },
   {
-    "revision": "e620d356e5c76a3bc0ab3cc8f636802f",
-    "url": "/Updated-React-Portfolio/static/media/profile-image.e620d356.png"
+    "revision": "0570828e626b7098f18f7e327cd4cc1e",
+    "url": "/Updated-React-Portfolio/static/media/profile-image-zoom.0570828e.png"
   }
 ]);

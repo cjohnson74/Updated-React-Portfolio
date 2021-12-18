@@ -39,7 +39,9 @@ function Contact() {
     message: '',
   });
 
-  const [resultState, setResultState] = useState('')
+  const [resultState, setResultState] = useState('');
+
+  const [visibilityState, setVisibilityState] = useState(true);
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
@@ -50,7 +52,8 @@ function Contact() {
     emailjs.sendForm('service_x3a7kcd', 'template_2qg65tf', e.target, 'user_LmbB7UI6aRptKfQhADu3f')
     .then((result) => {
       console.log(`${result.text}, your email has been sent.`);
-      setResultState(`${result.text}, your email has been sent to cjohnson74.tech@gmail.com.`);
+      setResultState('Thank you, your email has been sent to: cjohnson74.tech@gmail.com');
+      setVisibilityState(false)
     }, (error) => {
       console.log(error.text);
     });
@@ -78,8 +81,8 @@ function Contact() {
   };
 
   return (
-    <section class="flex-column flex-center">
-      <form id="contact-form" onSubmit={sendEmail}>
+    <section className="flex-column flex-center">
+      <form id="contact-form" onSubmit={sendEmail} style={{visibility: visibilityState ? 'visible' : 'hidden'}}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -113,8 +116,8 @@ function Contact() {
           </div>
         )}
         <button type="submit" value="Send">Send</button>
-        <p>{resultState}</p>
       </form>
+      <p>{resultState}</p>
     </section>
   );
 }

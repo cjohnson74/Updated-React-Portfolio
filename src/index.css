@@ -35,7 +35,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
+  background: linear-gradient(to bottom, #001721 10%,#000000 100%);
   color: var(--light);
   /* font-family: 'Anton', sans-serif; */
 }
@@ -240,10 +240,14 @@ textarea {
   width: 100%;
 }
 
+/* .blue-filter {
+  filter: sepia(1) opacity(90%);
+}
+
 .monochrome {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
+} */
 
 .dark-blue {
   color: var(--secondary);

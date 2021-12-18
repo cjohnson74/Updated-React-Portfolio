@@ -488,16 +488,48 @@ textarea {
     font-size: 2.3rem;
   }
   .project-text {
-    padding-top: 15%;
+    padding-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
-  .project-text h3 {
-    font-size: 1.3rem;
+
+  @media only screen and (max-width: 700px) {
+    .project-text h3 {
+      font-size: 1.5rem;
+    }
+
+    .project-text h5 {
+      font-size: 1rem;
+    }
+
+    .project-text h4 {
+      font-size: .8rem;
+    }
+
+    .project p {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+
+    .project {
+      min-height: 250px;
+    }
+
+    @media only screen and (max-width: 629px) {
+      .project p {
+        font-size: .9rem;
+        line-height: 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 559px) {
+      .project p {
+        font-size: .65rem;
+      }
+    }
   }
-  .project p {
-    font-size: .65rem;
-  }
-  p {
+  /* p {
     font-size: 1rem;
-    /* line-height: var(--spacing-one); */
-  }
+    line-height: var(--spacing-one);
+  } */
 }

@@ -3,7 +3,7 @@ import { removeHyphensAndCapitalize } from '../../utils/helpers';
 
 function Project({ project }) {
 
-  const { name, repo, link, techStack, description } = project;
+  const { name, repo, link, techStack, description, role } = project;
 
   return (
     <div data-aos="fade-up" className="project" key={name}>
@@ -19,8 +19,10 @@ function Project({ project }) {
             <i className="fab fa-github"></i>
           </a>
         </h3>
+
+        <h5>Role: {role}</h5>
         <p>{techStack}</p>
-        <p>{description}</p>
+        <p className="project-description">{description}</p>
       </div>
     </div>
   );

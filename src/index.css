@@ -266,15 +266,6 @@ textarea {
   width: 100%;
 }
 
-/* .blue-filter {
-  filter: sepia(1) opacity(90%);
-}
-
-.monochrome {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-} */
-
 .dark-blue {
   color: var(--secondary);
 }
@@ -327,6 +318,11 @@ textarea {
 
 .flex-center {
   justify-content: center;
+}
+
+.project-description {
+  word-break: break-all;
+  white-space: normal;
 }
 
 .mx-1 {

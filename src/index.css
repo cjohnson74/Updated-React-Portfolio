@@ -241,11 +241,11 @@ textarea {
   text-decoration: none;
   opacity: .5;
   font-size: 1.7rem;
-  transition: all .3s ease-in-out;
+  transition: all 1.5s ease-in-out;
   background-image: linear-gradient(270deg, var(--darker) 0%, var(--darker) 100%);
   background-repeat: no-repeat;
-  background-size: 50% 0.1rem;
-  background-position: bottom;
+  background-size: 50% .1rem;
+  background-position-y: bottom;
 }
 
 .resume a:hover {
@@ -321,7 +321,7 @@ textarea {
 }
 
 .project-description {
-  word-break: break-all;
+  text-overflow: clip;
   white-space: normal;
 }
 
@@ -420,7 +420,8 @@ textarea {
     left: 0px;
     right: 0px;
     padding-left: 10%;
-    padding-top: 20%;
+    padding-right: 10%;
+    padding-top: 0%;
     z-index: 900;
     opacity: 0;
     transition: all .5s ease-in-out;

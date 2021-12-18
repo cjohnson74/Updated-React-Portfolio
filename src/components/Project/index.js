@@ -21,7 +21,7 @@ function Project({ project }) {
         </h3>
 
         <h5>Role: {role}</h5>
-        <p>{techStack}</p>
+        <h4>{techStack}</h4>
         <p className="project-description">{description}</p>
       </div>
     </div>

@@ -12,7 +12,7 @@ function Portfolio() {
       techStack: "MongoDB/Express/React/Node/GraphQL/Apollo/JWT",
       link: "https://agile-basin-79882.herokuapp.com/",
       repo: "https://github.com/cjohnson74/Biiggie",
-      description: "",
+      description: "Here comes Biiggie, a MERN application, where you can find talented individuals to make your dreams become reality. Network with others to support your interest and donate your time and talents.",
       role: "Full-Stack Developer",
     },
     {
@@ -20,7 +20,7 @@ function Portfolio() {
       techStack: "API/JS/CSS/HTML",
       link: "https://cjohnson74.github.io/Geo-Stream/",
       repo: "https://github.com/cjohnson74/Geo-Stream",
-      description: "A movie finder app that helps you find where you can watch shows/movies.",
+      description: "A movie finder app that helps you find where you can watch shows/movies. I used JavaScript to pull from multiple WebAPIs",
       role: "JavaScript Developer (Fetch API)",
     },
     {
@@ -28,7 +28,7 @@ function Portfolio() {
       techStack: "MySQL/HandleBars/JSS/CSS/HTML",
       link: "https://cooking-crafty.herokuapp.com/",
       repo: "https://github.com/cjohnson74/Cooking-Crafty",
-      description: "",
+      description: "An application that recommends recipes based on what ingredients you have on your fridge. Cooking Crafty is an application that recommends recipes based on what ingredients you have on your fridge. I was in charge of designing, creating, and organizing the back-end of Cooking Crafty. I collected a large amount of data, created seeders, and organized the data using Object-Relational mapping.",
       role: "Backend Developer",
     },
     {
@@ -44,7 +44,7 @@ function Portfolio() {
       techStack: "Node/Express/JS/CSS/HTML",
       link: "https://note-taker-app-express-js.herokuapp.com/",
       repo: "https://github.com/cjohnson74/Note-Taker-App",
-      description: "",
+      description: "An application that can be used to write and save notes. This application uses an Express.js back end and saves and retrieves note data from a JSON file.",
       role: "Solo Developer",
     },
     {
@@ -52,7 +52,7 @@ function Portfolio() {
       techStack: "Inquirer/Jest/Node/JS/CSS/HTML",
       link: "https://cjohnson74.github.io/Team-Profile-Generator/",
       repo: "https://github.com/cjohnson74/Team-Profile-Generator",
-      description: "",
+      description: "I used object oriented programming to build this Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so I also wrote a unit test for every part of my code and ensured that it passes each test.",
       role: "Solo Developer",
     },
     {
@@ -60,7 +60,7 @@ function Portfolio() {
       techStack: "React/MongoDB/NoSQL/Node/JS/CSS/HTML",
       link: "https://mongo-fitness-tracker-app.herokuapp.com/",
       repo: "https://github.com/cjohnson74/NoSQL-Fitness-Tracker",
-      description: "",
+      description: "I created a workout tracker that has a Mongo database with a Mongoose schema and handles routes with express.",
       role: "Solo Developer",
     },
   ]);

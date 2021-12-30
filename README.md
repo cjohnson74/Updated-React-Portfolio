@@ -1,5 +1,5 @@
 # Updated React Portfolio
-A personal portfolio website, created using my React skills, which will help set me apart from other developers whose portfolios don’t use the latest technologies.
+My personal portfolio website, created using my React skills, which will help set me apart from other developers whose portfolios don’t use the latest technologies.
 
 
 ## Live React Portfolio

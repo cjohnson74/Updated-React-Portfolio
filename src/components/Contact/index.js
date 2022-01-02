@@ -115,7 +115,7 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" value="Send">Send</button>
+        <button type="submit" value="Send">Send To cjohnson74.tech@gmail.com</button>
       </form>
       <p>{resultState}</p>
     </section>

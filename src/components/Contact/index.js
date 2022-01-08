@@ -83,7 +83,7 @@ function Contact() {
   };
 
   return (
-    <section className="flex-column flex-center">
+    <section className="flex-column flex-center my-5">
       {visibilityState ? (
         <form
           id="contact-form"
@@ -127,11 +127,10 @@ function Contact() {
           </button>
         </form>
       ) : (
-        <div>
+        <div style={{width: '70%', height: '30%'}}>
           <img
             style={{
-              marginLeft: '25%',
-              marginRight: '25%',
+              width: '100%',
               visibility: visibilityState ? 'hidden' : 'visible',
             }}
             src={gif}

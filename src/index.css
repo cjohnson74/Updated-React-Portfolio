@@ -492,7 +492,7 @@ textarea {
     /* line-height: var(--spacing-one); */
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 970px) {
   nav {
     position: static;
     display: block;

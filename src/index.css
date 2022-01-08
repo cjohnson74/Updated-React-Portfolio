@@ -388,6 +388,14 @@ textarea {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .card {
   width: 25%;
   text-align: center;

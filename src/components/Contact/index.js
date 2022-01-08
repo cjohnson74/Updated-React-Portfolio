@@ -5,34 +5,6 @@ import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
 
-  //   const form = useRef();
-
-  //   const sendEmail = (e) => {
-  //     e.preventDefault();
-
-  //     emailjs.sendForm('service_x3a7kcd', 'template_2qg65tf', form.current, 'user_LmbB7UI6aRptKfQhADu3f')
-  //       .then((result) => {
-  //           console.log(result.text);
-  //       }, (error) => {
-  //           console.log(error.text);
-  //       });
-  //   };
-
-  //   return (
-  //     <section class="flex-column flex-center">
-  //     <form id="contact-form" ref={form} onSubmit={sendEmail}>
-  //       <label>Name</label>
-  //       <input type="text" name="from_name" />
-  //       <label>Email</label>
-  //       <input type="email" name="user_email" />
-  //       <label>Message</label>
-  //       <textarea name="message" />
-  //       <input type="submit" value="Send" />
-  //     </form>
-  //     </section>
-  //   );
-  // };
-
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -40,6 +12,8 @@ function Contact() {
   });
 
   const [resultState, setResultState] = useState('');
+
+  const [buttonActivityState, setButtonActivityState] = useState('disabled-button');
 
   const [visibilityState, setVisibilityState] = useState(true);
 
@@ -60,23 +34,39 @@ function Contact() {
   };
 
   const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.user_email);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.user_name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
+    switch (e.target.name) {
+      case 'user_email':
+        const isValid = validateEmail(e.target.user_email);
+        if (!isValid) {
+          setErrorMessage('Your email is invalid...');
+          setButtonActivityState('disabled-button');
+        } else {
+          setErrorMessage('');
+        }
+        break;
+      case 'from_name':
+        if (!e.target.value.length) {
+          setErrorMessage('Your name is required to send a message.');
+          setButtonActivityState('disabled-button');
+        } else {
+          setErrorMessage('');
+        }
+        break;
+      case 'message':
+        if (!e.target.value.length) {
+          setErrorMessage("Don't be shy, write a message!");
+          setButtonActivityState('disabled-button');
+        } else {
+          setErrorMessage('');
+        }
+        break;
+      default:
+        break;
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.user_name]: e.target.message });
       console.log('Handle Form', formState);
+      setButtonActivityState('active-button');
     }
   };
 
@@ -115,7 +105,7 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" value="Send">Send To cjohnson74.tech@gmail.com</button>
+        <button type="submit" value="Send" className={buttonActivityState}>Send To cjohnson74.tech@gmail.com</button>
       </form>
       <p>{resultState}</p>
     </section>
